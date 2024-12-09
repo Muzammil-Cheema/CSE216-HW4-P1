@@ -5,13 +5,34 @@ import java.util.stream.Stream;
 
 
 public class BijectionGroup {
-    public static <T> List<Function<T, T>> bijectionsOf(Set<T> set) {
+    public static <T> Group<Function<T, T>> bijectionGroup(Set<T> set){
+        Group<Function<T, T>> group = new Group<Function<T, T>>() {
+            @Override
+            public Function<T, T> binaryOperation(Function<T, T> f, Function<T, T> g) {
+                return x -> f.apply(g.apply(x));
+            }
+
+            @Override
+            public Function<T, T> identity() {
+                return x -> x;
+            }
+
+            @Override
+            public Function<T, T> inverseOf(Function<T, T> f) {
+                return f;
+            }
+        };
+
+        return group;
+    }
+
+    public static <T> Set<Function<T, T>> bijectionsOf(Set<T> set) {
         List<List<T>> arrangements = new ArrayList<>();
         List<T> setList = new ArrayList<>(set);
         permute(setList, arrangements, new ArrayList<>(), 0);
-        List<Function<T, T>> bijections = new ArrayList<>();
+        Set<Function<T, T>> bijections = new HashSet<>();
 
-        for (List<T> bijection : arrangements){
+        for (List<T> bijection : arrangements){     //Adds each permutation to the set of bijections
             Map<T, T> map = new HashMap<>();
             for (int i = 0; i < bijection.size(); i++)
                 map.put(setList.get(i), bijection.get(i));
@@ -21,15 +42,6 @@ public class BijectionGroup {
         return bijections;
     }
 
-    /*
-    Add 1
-        Add 2
-            Add 3
-        Add 3
-            Add 2
-    Remove 1 Add 2
-        Add
-     */
     private static <E> void permute(List<E> elements, List<List<E>> arrangements, List<E> bijection, int curr){
         if (bijection.size() == elements.size())             //Adds bijection once full
             arrangements.add(bijection);
@@ -47,10 +59,20 @@ public class BijectionGroup {
     public static void main(String[] args) {
         Set<Integer> a_few = Stream.of(1, 2, 3).collect(Collectors.toSet());
         // you have to figure out the data type in the line below
-        List<Function<Integer, Integer>> bijections = bijectionsOf(a_few);
+        Set<Function<Integer, Integer>> bijections = bijectionsOf(a_few);
         bijections.forEach(aBijection -> {
             a_few.forEach(n -> System.out.printf("%d --> %d; ", n, aBijection.apply(n)));
             System.out.println();
         });
+
+
+        // you have to figure out the data types in the lines below
+        // some of these data types are functional objects
+        // so, look into java.util.function.Function
+        Group<Function<Integer, Integer>> g = bijectionGroup(a_few);
+        Function<Integer, Integer> f1 = bijectionsOf(a_few).stream().findFirst().get();
+        Function<Integer, Integer> f2 = g.inverseOf(f1);
+        Function<Integer, Integer> id = g.identity();
+        a_few.forEach(n -> System.out.printf("%d --> %d; ", n, id.apply(n)));
     }
 }
