@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4590d787-73de-4397-9a0f-d03dda964431" name="Changes" comment="Finished Question 1">
-      <change afterPath="$PROJECT_DIR$/src/BijectionGroup.java" afterDir="false" />
+    <list default="true" id="4590d787-73de-4397-9a0f-d03dda964431" name="Changes" comment="Finished Part 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BijectionGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BijectionGroup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -59,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733421302947</updated>
-      <workItem from="1733421304481" duration="23819000" />
+      <workItem from="1733421304481" duration="31969000" />
     </task>
     <task id="LOCAL-00001" summary="Finished Question 1">
       <option name="closed" value="true" />
@@ -101,7 +102,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733436917601</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Test Question 2">
+      <option name="closed" value="true" />
+      <created>1733712430031</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733712430031</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Finished Part 1">
+      <option name="closed" value="true" />
+      <created>1733728119154</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733728119154</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +126,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished Question 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Question 1" />
+    <MESSAGE value="Test Question 2" />
+    <MESSAGE value="Finished Part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Part 1" />
   </component>
 </project>
