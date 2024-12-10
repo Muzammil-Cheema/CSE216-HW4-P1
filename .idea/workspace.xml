@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4590d787-73de-4397-9a0f-d03dda964431" name="Changes" comment="Finished Part 1">
+    <list default="true" id="4590d787-73de-4397-9a0f-d03dda964431" name="Changes" comment="Merge remote-tracking branch 'main/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/BijectionGroup.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BijectionGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BijectionGroup.java" afterDir="false" />
     </list>
@@ -24,9 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2po8w17mzpea5hNeKfMngAOKVdz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,6 +49,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -60,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733421302947</updated>
-      <workItem from="1733421304481" duration="31969000" />
+      <workItem from="1733421304481" duration="38323000" />
     </task>
     <task id="LOCAL-00001" summary="Finished Question 1">
       <option name="closed" value="true" />
@@ -118,7 +119,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733728119154</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finished Part 1">
+      <option name="closed" value="true" />
+      <created>1733768102085</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733768102086</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'main/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/BijectionGroup.java">
+      <option name="closed" value="true" />
+      <created>1733768136983</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733768136983</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +145,7 @@
     <MESSAGE value="Finished Question 1" />
     <MESSAGE value="Test Question 2" />
     <MESSAGE value="Finished Part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Part 1" />
+    <MESSAGE value="Merge remote-tracking branch 'main/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/BijectionGroup.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'main/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/BijectionGroup.java" />
   </component>
 </project>

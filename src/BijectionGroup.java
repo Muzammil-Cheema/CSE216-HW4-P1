@@ -29,7 +29,7 @@ public class BijectionGroup {
     public static <T> Set<Function<T, T>> bijectionsOf(Set<T> set) {
         List<List<T>> arrangements = new ArrayList<>();
         List<T> setList = new ArrayList<>(set);
-        permute(setList, arrangements, new ArrayList<>(), 0);
+        permute(setList, arrangements, new ArrayList<>());
         Set<Function<T, T>> bijections = new HashSet<>();
 
         for (List<T> bijection : arrangements){     //Adds each permutation to the set of bijections
@@ -42,16 +42,16 @@ public class BijectionGroup {
         return bijections;
     }
 
-    private static <E> void permute(List<E> elements, List<List<E>> arrangements, List<E> bijection, int curr){
+    private static <E> void permute(List<E> elements, List<List<E>> arrangements, List<E> bijection){
         if (bijection.size() == elements.size())             //Adds bijection once full
             arrangements.add(bijection);
         else {
             for (int j = 0; j < elements.size(); j++){      //Iterate through elements
                 if (bijection.contains(elements.get(j)))    //Ignore an element if it already exists in the bijection
                     continue;
-                bijection.add(curr, elements.get(j));
-                permute(elements, arrangements, new ArrayList<>(bijection), curr+1);    //Recursive call to fill bijection
-                bijection.remove(curr);                     //Removes the element added for the next iteration to start a new bijection
+                bijection.add(elements.get(j));
+                permute(elements, arrangements, new ArrayList<>(bijection));    //Recursive call to fill bijection
+                bijection.remove(bijection.size() - 1);                     //Removes the element added for the next iteration to start a new bijection
             }
         }
     }
