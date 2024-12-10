@@ -19,7 +19,11 @@ public class BijectionGroup {
 
             @Override
             public Function<T, T> inverseOf(Function<T, T> f) {
-                return f;
+                Map<T, T> inverseMap = new HashMap<>();
+                for (T x : set)
+                    inverseMap.put(f.apply(x), x);
+                Function<T, T> inverse = inverseMap::get;
+                return inverse;
             }
         };
 
@@ -51,7 +55,7 @@ public class BijectionGroup {
                     continue;
                 bijection.add(elements.get(j));
                 permute(elements, arrangements, new ArrayList<>(bijection));    //Recursive call to fill bijection
-                bijection.remove(bijection.size() - 1);                     //Removes the element added for the next iteration to start a new bijection
+                bijection.remove(bijection.size() - 1);         //Removes the element added for the next iteration to start a new bijection
             }
         }
     }
@@ -65,6 +69,7 @@ public class BijectionGroup {
             System.out.println();
         });
 
+
         // you have to figure out the data types in the lines below
         // some of these data types are functional objects
         // so, look into java.util.function.Function
@@ -72,5 +77,13 @@ public class BijectionGroup {
         Function<Integer, Integer> f1 = bijectionsOf(a_few).stream().findFirst().get();
         Function<Integer, Integer> f2 = g.inverseOf(f1);
         Function<Integer, Integer> id = g.identity();
+
+
+        a_few.forEach(n -> System.out.printf("%d --> %d; ", n, f1.apply(n)));
+        System.out.println();
+        a_few.forEach(n -> System.out.printf("%d --> %d; ", n, f2.apply(n)));
+        System.out.println();
+        a_few.forEach(n -> System.out.printf("%d --> %d; ", n, f1.apply(f2.apply(n))));
+        System.out.println();
     }
 }

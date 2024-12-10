@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4590d787-73de-4397-9a0f-d03dda964431" name="Changes" comment="Merge remote-tracking branch 'main/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/BijectionGroup.java">
+    <list default="true" id="4590d787-73de-4397-9a0f-d03dda964431" name="Changes" comment="Removed unnecessary parameter from permute method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BijectionGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BijectionGroup.java" afterDir="false" />
     </list>
@@ -61,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733421302947</updated>
-      <workItem from="1733421304481" duration="38323000" />
+      <workItem from="1733421304481" duration="41846000" />
     </task>
     <task id="LOCAL-00001" summary="Finished Question 1">
       <option name="closed" value="true" />
@@ -135,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733768136983</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Removed unnecessary parameter from permute method.">
+      <option name="closed" value="true" />
+      <created>1733815769068</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733815769068</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +154,7 @@
     <MESSAGE value="Test Question 2" />
     <MESSAGE value="Finished Part 1" />
     <MESSAGE value="Merge remote-tracking branch 'main/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/BijectionGroup.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'main/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/BijectionGroup.java" />
+    <MESSAGE value="Removed unnecessary parameter from permute method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary parameter from permute method." />
   </component>
 </project>
